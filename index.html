@@ -1,60 +1,120 @@
+import React from "react";
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sithira Deelaka - Portfolio</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #f0f4ff; margin: 0; padding: 2rem; color: #333; }
-    .container { max-width: 800px; margin: auto; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    h1 { color: #004aad; }
-    h2 { color: #005bbb; margin-top: 2rem; }
-    a { color: #0056cc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .project { margin-bottom: 1rem; }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Sithira Deelaka</h1>
-    <p><strong>Web Developer | Bachelor of IT | Relocating to Tasmania</strong></p>
-    <p>Email: <a href="mailto:hlsdeelaka@msn.com">hlsdeelaka@msn.com</a> | Phone: +61 452 280 399</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/sithira-deelaka-39002615b" target="_blank">linkedin.com/in/sithira-deelaka</a></p>
+export default function Portfolio() {
+  return (
+    <main className="min-h-screen bg-gradient-to-br from-blue-50 to-white p-6">
+      <div className="max-w-4xl mx-auto bg-white shadow-xl rounded-2xl p-8">
+        <h1 className="text-5xl font-bold text-blue-700 mb-2">Sithira Deelaka</h1>
+        <p className="text-lg text-gray-600 mb-6">Web Developer | Bachelor of IT | Relocating to Tasmania</p>
 
-    <h2>About Me</h2>
-    <p>Recent IT graduate with hands-on web development experience from an internship at West Urban Group. Passionate about software engineering with skills in React, Java, Spring Boot, and MySQL. Relocating to Tasmania in July and seeking entry-level opportunities.</p>
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold text-blue-600 mb-2">Contact</h2>
+          <div className="text-gray-700 space-y-1">
+            <p>Email: <a className="text-blue-500 underline" href="mailto:hlsdeelaka@msn.com">hlsdeelaka@msn.com</a></p>
+            <p>Phone: +61 452 280 399</p>
+            <p>LinkedIn: <a className="text-blue-500 underline" href="https://linkedin.com/in/sithira-deelaka-39002615b" target="_blank">linkedin.com/in/sithira-deelaka</a></p>
+          </div>
+        </section>
 
-    <h2>Skills</h2>
-    <ul>
-      <li>Languages: Java, Python, C++, C#, PHP, JavaScript</li>
-      <li>Web: React.js, HTML, CSS, Spring Boot, PHP (MVC), Node.js</li>
-      <li>Databases: MySQL, PostgreSQL, SQLite</li>
-      <li>Tools: Docker, GitHub, NetBeans, Android Studio, DBeaver</li>
-    </ul>
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold text-blue-600 mb-2">About Me</h2>
+          <p className="text-gray-700">
+            I am a recent graduate with a Bachelor of Information Technology and hands-on experience in web development
+            through an internship at West Urban Group. I have strong skills in both front-end and back-end development, with experience
+            in Java, Spring Boot, React.js, and databases like MySQL and PostgreSQL. I also bring a solid background in customer service,
+            having worked in various roles that required strong communication and problem-solving abilities. I’m passionate about
+            software engineering and eager to contribute to innovative development teams. Currently based in Melbourne, I am relocating
+            to Tasmania at the end of July and seeking entry-level opportunities in the IT industry.
+          </p>
+        </section>
 
-    <h2>Projects</h2>
-    <div class="project">
-      <strong>Vibe Check Social App</strong><br/>
-      <p>React.js, Node.js, Cloud MySQL | <a href="https://github.com/SithiraDHL/vc-api" target="_blank">View Code</a></p>
-    </div>
-    <div class="project">
-      <strong>Movie Review Website</strong><br/>
-      <p>Java, MySQL, HTML/CSS | <a href="https://github.com/isys1118-sef2020/team-project-thegreatwall" target="_blank">View Code</a></p>
-    </div>
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold text-blue-600 mb-2">Skills</h2>
+          <ul className="list-disc list-inside text-gray-700 space-y-1">
+            <li>Languages: Java, Python, C++, C#, PHP, JavaScript</li>
+            <li>Web: React.js, HTML, CSS, Spring Boot, PHP (MVC), Node.js</li>
+            <li>Databases: MySQL, PostgreSQL, SQLite</li>
+            <li>Tools: Docker, GitHub, NetBeans, Android Studio, DBeaver</li>
+            <li>Soft Skills: Customer service, teamwork, fast learner, attention to detail</li>
+          </ul>
+        </section>
 
-    <h2>Education</h2>
-    <ul>
-      <li>Bachelor of Information Technology – RMIT University (2020–2022)</li>
-      <li>ACS Professional Year Program – Performance Education (2023–2024)</li>
-      <li>Diploma of IT – SLIIT (2017–2019)</li>
-    </ul>
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold text-blue-600 mb-4">Projects</h2>
+          <div className="space-y-4">
+            <div className="p-4 border rounded-lg bg-blue-50">
+              <h3 className="font-semibold text-blue-700">Vibe Check Social App</h3>
+              <p>Social media app for students to post academic and non-academic questions. Built with React.js, Node.js, Cloud MySQL. Features include user login, forum creation, and admin management.</p>
+              <div className="mt-2 space-x-4">
+                <a href="https://github.com/SithiraDHL/assignment" target="_blank" className="inline-block bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700">View Code</a>
+              </div>
+            </div>
+            <div className="p-4 border rounded-lg bg-blue-50">
+              <h3 className="font-semibold text-blue-700">Movie Review Website</h3>
+              <p>Built using Java Maven, MySQL, HTML, and CSS. Users can register, add new movies and actors, and write reviews. Admins can manage content.</p>
+              <div className="mt-2 space-x-4">
+                <a href="https://github.com/isys1118-sef2020/team-project-thegreatwall" target="_blank" className="inline-block bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700">View Code</a>
+              </div>
+            </div>
+            <div className="p-4 border rounded-lg bg-blue-50">
+              <h3 className="font-semibold text-blue-700">POS System for Clothing Store</h3>
+              <p>Standalone Java application built using NetBeans and MySQL, including stock, employee, and point-of-sale management. Developed as a final year project at SLIIT. This project was not uploaded to GitHub.</p>
+            </div>
+          </div>
+        </section>
 
-    <h2>Certifications</h2>
-    <ul>
-      <li>Driver’s License (Australia)</li>
-      <li>Working with Children Check</li>
-    </ul>
-  </div>
-</body>
-</html>
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold text-blue-600 mb-2">Work Experience</h2>
+          <ul className="text-gray-700 space-y-4">
+            <li>
+              <strong>Full Stack Web Developer (Internship)</strong> – West Urban Group<br />
+              Developed web applications using Java, Spring Boot, and React.js. Assisted in debugging, optimization, and database integration using DBeaver.
+            </li>
+            <li>
+              <strong>Console Operator</strong> – 7-Eleven<br />
+              Provided exceptional customer service, managed cash transactions, and maintained stock levels and cleanliness.
+            </li>
+            <li>
+              <strong>Customer Service Associate</strong> – Pacino's Pizza and Pasta<br />
+              Handled orders, managed restaurant operations, and ensured customer satisfaction.
+            </li>
+            <li>
+              <strong>Factory Hand</strong> – Style Ergonomics Australia<br />
+              Assisted in product assembly, inventory management, and quality control tasks.
+            </li>
+          </ul>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold text-blue-600 mb-2">Education</h2>
+          <ul className="list-disc list-inside text-gray-700">
+            <li>Bachelor of Information Technology – RMIT University (2020–2022)</li>
+            <li>ACS Professional Year Program – Performance Education (2023–2024)</li>
+            <li>Diploma of IT – Sri Lanka Institute of Information Technology (2017–2019)</li>
+          </ul>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold text-blue-600 mb-2">Certifications</h2>
+          <ul className="list-disc list-inside text-gray-700">
+            <li>Driver’s License (Australia)</li>
+            <li>Working with Children Check</li>
+          </ul>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold text-blue-600 mb-2">References</h2>
+          <p>Available upon request. Key contacts:</p>
+          <ul className="list-disc list-inside text-gray-700">
+            <li>Justin Jones – Site Manufacturing Engineer, Dow Chemical Australia – justinjones.au@gmail.com, +61 423 694 193</li>
+            <li>Brendan Allen – Assistant Tour Manager, Planet Shakers Church – brendojallen@gmail.com, +61 431 237 573</li>
+          </ul>
+        </section>
+
+        <footer className="text-center text-gray-500 text-sm mt-10">
+          &copy; 2025 Sithira Deelaka. All rights reserved.
+        </footer>
+      </div>
+    </main>
+  );
+}
